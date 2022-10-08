@@ -5,33 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Overnight</title>
+    
+<link rel="stylesheet" href="overnight.css">
+
 </head>
 <body>
-    
     <header>
         <nav>
          <div>
-            <h1>Baker Cay Resort</h1>
+            <h1>Mia's Resort Beach</h1>
          </div>
-        <nav>
-            <a href="#">overnight</a>
-        </nav>
-        <div>
-        <div>
-            <label for="search">
-                <input class="form control" type="search"
-                name="search"
-                id="search"
-                placeholder="search"
-                aria-label="search"/></label>
-        </div>
-    </div>
     </header>
-    <main>
-        <!--selected date and #of guests-->
-        
-    </main>
+  </body>
+    <h1>Select Your Dates</h1>
+    <p>Choose your dates to book today's available rooms and rates</p>
+    <form action="">
 
+ <fieldset> 
+    <label for="fullName">Full Name</label>
+    <input type="text" name="fullName" id="fullName"/>
+
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email"/>
+   
+    <label for="phoneNumber">Phone Number</label>
+    <input type="tel" name="phoneNumber" id="phoneNumber"/>
+ </fieldset>
+
+ <fieldset>
+    <label for="checkInDate">Check In</label>
+    <input type="date" name="checkIn" id="checkIn"/>
+
+    <label for="checkOut">Check Out</label>
+    <input type="date" name="checkOut" id="checkOut"/>
+ </fieldset>
+
+ <fieldset>
+    <legend>Rooms:</legend>
+    <input type="radio" name="roomSelection" id="King" value="king" checked/>King
+    <input type="radio" name="roomSelection" id="queen" value="queen" checked/>Queen
+    <input type="radio" name="roomSelection" id="suite" value="suite" checked/>Suite
+  </fieldset>  
+
+    <label for="adults">Adults</label>
+<select name="adults" id="adults">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</select>
+
+  <label for="adults">Children</label>
+<select name="children" id="children">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</select>
+
+<fieldset>
+    <label for="findRooms"></label>
+    <input type="button" name="findRooms" id="findRooms"  value="Find Rooms"/>
+</fieldset>
+
+<fieldset>
+    <legend>Discount</legend>
+    <input type="radio" name="discount" id="none" /> None<br />
+    <input type="radio" name="discount" id="senior" /> AAA/Seinor><br />
+    <input type="radio" name="discount" id="military" /> Military<br />
+     <input type="radio" name="discount" id="underTwo" /> Children Under Two<br /> 
+</fieldset>
+<button
+ type="submit" onclick="estimate();" onmouseover="log();">Submit</button>
+</form>
+        <table style="width:100%" >
+  <tr>
+    <th>Room Type</th>
+    <th>Max Occupancy</th>
+    <th>Per Night</th>
+    <th>Per Night</th>
+  </tr>
+  <tr>
+    <td>Queen</td>
+    <td>5(inc rollaway)</td>
+    <td>250.00</td>
+     <td>150.00</td>
+  </tr>
+  <tr>
+    <td>King</td>
+    <td>2</td>
+    <td>250.00</td>
+    <td>150.00</td>
+  </tr>
+  <tr>
+    <td>Suite</td>
+    <td>6(inc sleeper sofa)</td>
+    <td>350.00</td>
+    <td>210.00</td>
+  </tr>
+</table>
+
+<script src="overnight.js"></script>
+
+</body>
 
 </body>
 </html>
