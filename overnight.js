@@ -1,5 +1,6 @@
 "use strict"
 
-function estimateBtnClicked() {
-
+function estimateBtnClicked(event) {
+    event.preventDefault()
+console.log("I was here again and again.");
 }
